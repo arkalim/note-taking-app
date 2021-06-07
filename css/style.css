@@ -1,0 +1,53 @@
+body{
+    height: 100vh;
+}
+
+.card{
+    background-color: rgb(235, 235, 235);
+    color: black;
+    font-weight: normal;
+}
+
+.container{
+    width: 80%;
+}
+
+.navbar{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.h-primary{
+    padding: 10px 0px 10px 0px;
+    display: inline-block;
+    margin: 5px 0px;
+}
+
+.noteCard{
+    margin: 8px 0px;
+}
+
+#notes{
+    padding-bottom: 45px;
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+}
+
+#separator{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer{
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer p{
+    margin: 0;
+}

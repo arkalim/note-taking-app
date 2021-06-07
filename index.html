@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Notes</title>
+
+    <!-- CSS required by Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Template from Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">📝Magic Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <form class="d-flex">
+                    <input id="searchTxt" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button id="searchBtn" class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Div to add notes -->
+    <!-- my-3 is a bootstrap class that has margin of 3 px in y-direction -->
+    <div class="container my-3">
+        <h1 class="h-primary">📝Magic Notes</h1>
+
+        <!-- Card to add note -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add a note</h5>
+
+                <!-- input copied from bootstrap form -->
+                <div class="mb-3">
+                    <input class="form-control" id="addTitle" type="text" placeholder="Title" aria-label="default input example">
+                </div>
+                <!-- textarea copied from bootstrap form -->
+                <div class="mb-3">
+                    <textarea class="form-control" id="addTxt" rows="3" placeholder="Note..."></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add Note</button>
+            </div>
+        </div>
+
+        <!-- Separator between add notes and display notes -->
+        <div id="separator">
+            <h1 class="h-primary">📒Your Notes</h1>
+            <button class="btn btn-primary" id="delBtn">Delete All</button>
+        </div>
+
+        <!-- Div to display the saved notes -->
+        <!-- row class makes the element as inline-block -->
+        <!-- container-fluid is a bootrtrap class that takes the full width of the screen -->
+        <div class="container-fluid" id="notes">
+            <!-- This will be populated dynamically -->
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <!-- fixed-bottom is a bootstrap class to make sticky footers -->
+    <footer id="footer" class="fixed-bottom">
+        <p>Made with 💙 by Abdur Rahman</p>
+    </footer>
+
+    <!-- JS required by Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
